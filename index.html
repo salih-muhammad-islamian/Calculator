@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumen — Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="calc">
+  <div class="brand">Lumen · Calculator</div>
+  <div class="display">
+    <div class="prev-op" id="prevOp">&nbsp;</div>
+    <div class="current" id="current">0</div>
+  </div>
+
+  <div class="pad">
+    <button class="btn-fn" data-action="clear">AC</button>
+    <button class="btn-fn" data-action="negate">±</button>
+    <button class="btn-fn" data-action="percent">%</button>
+    <button class="btn-op" data-action="divide">÷</button>
+
+    <button data-num="7">7</button>
+    <button data-num="8">8</button>
+    <button data-num="9">9</button>
+    <button class="btn-op" data-action="multiply">×</button>
+
+    <button data-num="4">4</button>
+    <button data-num="5">5</button>
+    <button data-num="6">6</button>
+    <button class="btn-op" data-action="subtract">−</button>
+
+    <button data-num="1">1</button>
+    <button data-num="2">2</button>
+    <button data-num="3">3</button>
+    <button class="btn-op" data-action="add">+</button>
+
+    <button class="btn-zero" data-num="0">0</button>
+    <button data-action="decimal">.</button>
+    <button class="btn-eq" data-action="equals">=</button>
+  </div>
+
+  <div class="hint">Keyboard supported · Esc to clear</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
